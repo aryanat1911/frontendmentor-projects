@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: grid;
+  width: 1100px;
+  height: 430px;
+  grid-template-columns: 50% 50%;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+}
+
+.left-content {
+  display: grid;
+  grid-template-rows: 35% 20% 45%;
+  place-items: center;
+}
+
+.left-content h1 {
+  font-family: inter;
+  width: 100%;
+  padding: 60px 80px 0 80px;
+  font-size: 35px;
+}
+
+.left-content p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: inter;
+  width: 100%;
+  font-size: 15px;
+  text-align: left;
+  padding: 35px 80px 0 80px;
+  line-height: 1.6;
+}
+
+.details {
+  width: 100%;
+}
+
+.details h6 {
+  font-weight: 400;
+  font-family: Lexend Deca;
+  color: hsla(0, 0%, 100%, 0.6);
+  padding-top: 8px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.details ul {
+  font-size: 20px;
+  font-family: inter;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.details li {
+  padding-right: 55px;
+}
+
+.right-content {
+  background: url("./images/image-header-desktop.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 0 10px 10px 0;
+}
+
+.content-image {
+  background-color: hsl(277deg 100% 43% / 43%);
+  width: 100%;
+  height: 100%;
+}
+
+.top-mobile-image,
+.color-mobile-image {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 425px) {
+  .main-content {
+    height: 100%;
+  }
+
+  .top-mobile-image {
+    display: block;
+    width: 100%;
+    height: 29%;
+    background: url("./images/image-header-mobile.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .color-mobile-image {
+    display: block;
+    background-color: hsl(277deg 100% 43% / 43%);
+    width: 100%;
+    height: 100%;
+  }
+
+  .card {
+    display: block;
+    width: 320px;
+    height: 820px;
+    margin: 50px 0px;
+  }
+
+  .left-content {
+    display: grid;
+    grid-template-rows: 25% 25% 50%;
+    place-items: center;
+  }
+
+  .left-content h1 {
+    padding: 30px 20px 0 20px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .left-content p {
+    font-size: 14px;
+    text-align: center;
+    padding: 29px 35px 20px 35px;
+    line-height: 1.6;
+  }
+
+  .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .details ul {
+    font-size: 20px;
+    font-family: inter;
+    display: block;
+    list-style: none;
+    justify-content: center;
+  }
+
+  .details li {
+    padding: 22px 0px;
+    text-align: center;
+  }
+}
