@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-content {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 920px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.sedans img,
+.suvs img,
+.luxury img {
+  width: 110px;
+  padding: 50px 0 30px 43px;
+}
+
+.sedans h1,
+.suvs h1,
+.luxury h1 {
+  font-family: Big Shoulders Display;
+  font-size: 38px;
+  padding: 0 0 25px 43px;
+  color: hsl(0, 0%, 95%);
+}
+
+.sedans p,
+.suvs p,
+.luxury p {
+  font-family: Lexend Deca;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  line-height: 25px;
+  padding: 0px 46px 0 46px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.orange-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.cyan-btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.dark-cyan-btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.button {
+  margin: 100px 40px 0 50px;
+}
+
+.button a {
+  font-size: 15px;
+  font-family: Lexend Deca;
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 14px 30px 14px 30px;
+  border-radius: 25px;
+  border: 1.2px solid white;
+  transition: all 100ms ease-in-out;
+}
+
+.button a:hover {
+  background-color: transparent;
+  color: white;
+  border: 1.2px solid white;
+}
+
+@media (max-width: 425px) {
+  .card {
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: none;
+    margin: 50px 0;
+  }
+
+  .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+
+  .sedans p,
+  .suvs p,
+  .luxury p {
+    font-size: 12px;
+    line-height: 25px;
+    padding: 0px 45px 0 45px;
+  }
+  .button {
+    margin: 50px 40px 50px 43px;
+  }
+}
