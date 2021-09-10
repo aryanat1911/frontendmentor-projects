@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: Kumbh Sans;
+}
+
+.background {
+  display: flex;
+  background-color: hsl(185, 75%, 39%);
+  position: fixed;
+  z-index: -1;
+}
+
+.top-style {
+  transform: translate(-290px, -450px);
+}
+
+.bottom-style {
+  transform: translate(-255px, 400px);
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.bg-pattern img {
+  border-radius: 15px 15px 0 0;
+}
+
+.profile-name {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.profile-img {
+  display: flex;
+  justify-content: center;
+  transform: translateY(-60px);
+  margin-bottom: -40px;
+}
+
+.name {
+  font-size: 18px;
+  padding-right: 5px;
+}
+
+.age {
+  font-size: 18px;
+  font-style: normal;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.country {
+  font-size: 15px;
+  padding: 10px;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.profile-img img {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+
+.profile-details {
+  padding: 25px;
+}
+
+hr {
+  border-color: hsl(0deg 0% 59% / 13%);
+}
+
+.profile-details ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  color: hsl(0, 0%, 59%);
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+@media (max-width: 425px) {
+  .top-style {
+    transform: translate(-750px, -550px);
+  }
+
+  .bottom-style {
+    transform: translate(-840px, 300px);
+  }
+}
